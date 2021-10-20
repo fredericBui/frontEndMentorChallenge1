@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
+body{
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+body main{
+    background-color: white;
+    border-radius: 15px;
+    height: 90%;
+    width: 30%;
+    -webkit-box-shadow: 0px 15px 13px 0px rgba(0,0,0,0.44); 
+    box-shadow: 0px 15px 13px 0px rgba(0,0,0,0.44);
+}
+
+/*Partie haute de la carte*/
+main #illustrationCard{
+    height: 35%;
+}
+
+main #illustrationCard img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+/*Partie base de la carte*/
+main section{
+    padding: 40px;
+    justify-content: space-around;
+    align-items: center;
+    height: 65%;
+}
+
+/* Intérieur de la partie base*/
+section h1{
+    font-weight: bolder;
+}
+
+section p{
+    padding: 15px 0px;
+    font-size: 16px;
+}
+
+section #annualPlan{
+    background-color: hsl(225, 100%, 94%);
+    width: 100%;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    border-radius: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section #annualPlan a{
+    padding-left: 35px;
+}
+
+section #annualPlan #price{
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section #annualPlan #price h2{
+    font-size: medium;
+    padding: 0px;
+}
+
+section #annualPlan #price p{
+    font-size: 16px;
+    padding: 0px;
+}
+
+section #payment{
+    background-color: hsl(245, 75%, 52%);
+    padding: 15px 0px;
+    width: 100%;
+    margin: 10px 0px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.44); 
+    box-shadow: 0px 5px 13px 0px rgba(0,0,0,0.44);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+section #cancel{
+    margin: 10px 0px;
+    text-decoration: none;   
+    font-size: medium;
+    font-weight: bold;
+}
+
+section .attribution { 
+    font-size: 11px; 
+}
+
+/* Orientation des flexbox*/
+body, body main, main section, section #annualPlan #price{
+    display: flex;
+    flex-direction: column;
+}
+
+section #annualPlan{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Couleurs des textes*/
+section .attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+section h1, section #annualPlan #price h2{
+    color: hsl(229, 46%, 29%);
+}
+
+section p, section #annualPlan #price p{
+    color: hsl(228, 40%, 46%);
+}
+
+section #payment{
+    color: white;
+}
+
+section #cancel{
+    color: grey;
+}
